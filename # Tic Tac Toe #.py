@@ -12,6 +12,9 @@ print ("1 - - ")
 print ("2 - - ")
 print ("3 - - ")
 print ("So for putting a synbol in the middle of the board you need to type 2 2")
+print ("Good luck")
+print ("")
+
 
 class TicTacToe:
     self.board = []
@@ -57,3 +60,33 @@ def is_player_win(self, player):
     #checking the diagonals
     for i in range(n):
         win = True
+        for i in range(n):
+            if self.board[i][i] != player:
+                win = False
+                break
+
+    if win:
+        return win
+    
+    win = True
+    for i in range(n):
+        if self.board[i][n-i-1] != player:
+            win = False
+            break
+    
+    if win :
+        return win
+    return False
+
+    for row in self.board :
+        for item in row:
+            if item == "-":
+                return False
+    return True
+
+def is_board_filled(self):
+    for row in self.board:
+        for item in row:
+            if item == "-":
+                return False
+    return True
