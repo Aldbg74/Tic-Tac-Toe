@@ -1,6 +1,7 @@
 # Tic Tac Toe #
 # By Alexis.D AKA Aldbg74 #
 # 2022 #
+# based on https://geekflare.com/fr/tic-tac-toe-python-code/ #
 
 import random
 print ("Welcome to Tic Tac Toe")
