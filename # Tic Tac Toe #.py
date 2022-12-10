@@ -32,3 +32,27 @@ def is_player_win(self, player):
     win = None
 
     n = len(self.board)
+
+    #checking the rows
+    for i in range(n):
+        win = True
+        for j in range(n):
+            if self.board[i][j] != player:
+                win = False
+                break
+        if win:
+            return win
+
+    #checking the columns
+    for i in range(n):
+        win = True
+        for j in range(n):
+            if self.board[j][i] != player:
+                win = False
+                break
+        if win:
+            return win
+
+    #checking the diagonals
+    for i in range(n):
+        win = True
