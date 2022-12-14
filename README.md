@@ -3,7 +3,7 @@
 This is a Tic Tac Toe game.
 It's make to be player by 2 players.
 
-<h1> Tic Tac Toe ? </h1?
+<h1> Tic Tac Toe ? </h1>
 
 - <h4> What is the Tic Tac Toe </h4>
 
